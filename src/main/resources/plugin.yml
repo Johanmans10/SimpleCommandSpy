@@ -1,0 +1,33 @@
+name: SimpleCommandSpy
+version: '${project.version}'
+main: xyz.johanmans10.simplecommandspy.SimpleCommandSpy
+api-version: '1.20'
+prefix: CommandSpy
+load: STARTUP
+author: Johanmans10
+description: A simple plugin that allows staff to see any executed commands in realtime.
+website: ${project.url}
+
+permissions:
+  scs.spy:
+    description: "Use this plugin"
+    default: op
+  scs.spy.others:
+    description: "Toggle for others"
+    default: op
+  scs.spy.exempt:
+    description: "Have your commands not be logged"
+    default: false
+  scs.reload:
+    description: "Toggle for others"
+    default: op
+
+commands:
+  simplecommandspy:
+    description: "Main command"
+    permission: "scs.spy"
+    permission-message: "§cYou don't have permission to use this command!"
+    usage: "/scs | /scs toggle | /scs toggle <player> | /scs reload"
+    aliases:
+      - commandspy
+      - scs

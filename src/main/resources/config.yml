@@ -1,0 +1,20 @@
+# Placeholders for all formats (except enable-by & disable-by): {NAME}, {UUID}
+formats:
+  prefix: "&7[&6SimpleCommandSpy&7]&r "
+  prefix-short: "&7[&6SCS&7]&r "
+  enable: "CommandSpy has been &aenabled&r."
+  enable-other: "CommandSpy has been &aenabled&r for {NAME}."
+  enable-by: "CommandSpy has been &aenabled&r by {NAME}."
+  disable: "CommandSpy has been &cdisabled&r."
+  disable-other: "CommandSpy has been &cdisabled&r for {NAME}."
+  disable-by: "CommandSpy has been &cdisabled&r by {NAME}."
+  # Placeholder for the command: {COMMAND}
+  spy: "&7&o{NAME} &8≫ &7/{COMMAND}"
+
+# these can be spied on separately using socialspy
+ignoredCommands:
+  - msg
+  - m
+  - tell
+  - r
+  - reply
